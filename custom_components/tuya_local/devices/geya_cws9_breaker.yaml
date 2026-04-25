@@ -12,7 +12,7 @@ entities:
     name: Voltage
     class: voltage
     dps:
-      - id: 102 # Твой Voltage
+      - id: 102
         name: sensor
         type: integer
         unit: V
@@ -29,7 +29,7 @@ entities:
         unit: A
         class: measurement
         mapping:
-          - scale: 100
+          - scale: 10
   - entity: sensor
     name: Power
     class: power
@@ -39,3 +39,13 @@ entities:
         type: integer
         unit: W
         class: measurement
+  - entity: button
+    name: Refresh Data
+    class: update
+    category: diagnostic
+    dps:
+      - id: 197
+        type: boolean
+        name: sensor
+        optional: true
+
