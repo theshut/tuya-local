@@ -1,6 +1,6 @@
 name: Geya GWS9 Breaker
 products:
-  - id: bf7f59da68863b53b5p9aa
+  - id: bf7f59da68863b53
 entities:
   - entity: switch
     icon: "mdi:fuse"
@@ -9,7 +9,6 @@ entities:
         name: switch
         type: boolean
   - entity: sensor
-    name: Voltage
     class: voltage
     dps:
       - id: 102
@@ -20,7 +19,6 @@ entities:
         mapping:
           - scale: 10
   - entity: sensor
-    name: Current
     class: current
     dps:
       - id: 106
@@ -31,7 +29,6 @@ entities:
         mapping:
           - scale: 1000
   - entity: sensor
-    name: Power
     class: power
     dps:
       - id: 110
@@ -40,7 +37,6 @@ entities:
         unit: W
         class: measurement
   - entity: sensor
-    name: Temperature
     class: temperature
     dps:
       - id: 114
